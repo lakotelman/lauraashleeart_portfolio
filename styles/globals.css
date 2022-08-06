@@ -1,26 +1,249 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+:root {
+  --font-header: 'Calistoga', cursive;
+  --font-main: 'Montserrat', sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4C6F65;
+  --secondary-color: #B4C8D9;
+  --primary-shadow: #000d247f;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+html { 
+  scroll-behavior: smooth;
+}
+
+ul { 
+  list-style-type: none; 
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: black;
 }
 
-* {
-  box-sizing: border-box;
+a:hover { 
+  color: rgba(255, 255, 255, 0.791)
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+body { 
+  font-family: var(--font-main);
+  margin: 0px;
+}
+
+h1 { 
+  font-family: var(--font-header);
+}
+
+h2 { 
+  font-family: var(--font-header);
+  font-size:xx-large;
+}
+
+              /* **Navigation**  */
+
+nav { 
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  margin:0;
+  background-color: var(--secondary-color);
+  box-shadow: 0 3px 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a { 
+  transition: 0.5s;
+}
+
+
+nav ul{ 
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 1.9rem;
+}
+
+nav ul li { 
+  font-weight: bold;
+}
+
+              /* **Hero Section**  */
+
+.header-background {
+  background: url("../public/images/betterwaves.svg") no-repeat;
+  background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 275px;
+}
+
+.about-me-container { 
+  display: flex;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.about-me {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  align-content: center;
+}
+
+.about-me h2{ 
+  font-size: 48px;
+}
+
+.about-me p { 
+  font-weight: var(--bolder-font);
+}
+
+              /* **Projects Cards**  */
+
+.projects{ 
+  display: flex; 
+  justify-content: center;
+  
+}
+
+.projects-grid { 
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  align-content: center;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2;
+  
+
+}
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .projects-grid { 
+  max-width: fit-content;
+  grid-template-columns: repeat(2, 1fr); 
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .projects-grid { 
+      grid-template-columns: repeat(3, 1fr);
+      max-width: fit-content;
+      justify-content: center;
+      align-items: center;
+      align-content: center; 
   }
 }
+
+.projects-card{
+  min-width: 250px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem; 
+  border-radius: 30px;
+  box-shadow: 0px 3px 5px var(--primary-shadow)
+}
+.card-image{
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  position: absolute;
+}
+.overlay { 
+  background-color: #4c6f659c;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  transition: 0.5s
+}
+
+.overlay:hover{ 
+  background-color: #4c6f6500;
+}
+
+.projects-card p{ 
+  color:rgb(255, 255, 255)
+}
+
+.projects-card a{
+  display: inline-block;
+  margin-top: auto;
+  align-self: flex-start;
+  position: relative;
+  color: #ffffff;
+}
+
+.a-flex {
+  margin-top: auto;
+}
+
+.projects-card a:after{ 
+  content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #ffffff;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.projects-card a:hover::after{ 
+  transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+.contact{ 
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: azure;
+  margin-top: 2rem;
+  box-shadow: 3px 3px 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+  display: flex;
+  bottom: 0;
+  left: 0;
+  gap: 2rem;
+  max-width: 800px;
+  align-items: center;
+  align-content: center;
+  
+}
+
+.contact ul{
+  display: flex; 
+  padding: 0px;
+  
+
+}
+
+
+
