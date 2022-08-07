@@ -1,15 +1,16 @@
 ---
-title: "Alaskan Folk Art"
+title: "Digital Folk Art"
 date: "August 6, 2022"
-exerpt: "This is a quote about whatever the thing is about limit to 100 words"
-cover_image: "/images/posts/Alaskan_Folk.jpg"
+exerpt: "An exploration in symmetry and composition"
+cover_image: "/images/posts/artworks/folkart/Alaskan_Folk.jpg"
 ---
 
-## This is the heading on the page
+##
 
-### I learned a bunch of skills in this project.
+<img src="/images/posts/artworks/folkart/fennecfolk.avif" style="width:100%;">
+<img src="/images/posts/artworks/folkart/3fe60fd2.avif" style="width:100%;">
+<img src="/images/posts/artworks/folkart/readingfolk.avif" style="width:100%;">
 
-- Skill 1
-- Skill 2
+## This project focused on composition, symmetry and subtle use of color.
 
-This project was an assignment from Liz Kohler Browns Folk Art class.
+I took this course on Skillshare early in my digital art journey.

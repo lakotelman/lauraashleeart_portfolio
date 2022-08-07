@@ -1,21 +1,20 @@
-import matter from "gray-matter"
+import matter from "gray-matter";
 import Post from "../components/Post";
 import fs from "fs";
 import path from "path";
 import Header from "../components/Header";
 import Head from "next/head";
-import {sortByDate} from "../utils"
+import { sortByDate } from "../utils";
 
 export default function Developer({ posts }) {
   return (
     <>
-    <Header/>
-    <h1> Laura-Ashlee Kotelman: Developer</h1>
+      <Header tag="Laura-Ashlee: Developer" main="I build things."tagline="Here is some of my work."/>
       <section className="projects">
         <div className="projects-grid">
-            {posts.map((post, index)=>(
-              <Post post={post}/>
-            ))}
+          {posts.map((post, index) => (
+            <Post post={post} />
+          ))}
         </div>
       </section>
     </>
@@ -35,17 +34,17 @@ export async function getStaticProps() {
       path.join("posts/dev_posts", filename),
       "utf-8"
     );
-    const {data:frontmatter} = matter(markdownWithMeta)
+    const { data: frontmatter } = matter(markdownWithMeta);
 
     return {
       slug,
-      frontmatter
+      frontmatter,
     };
   });
 
   return {
     props: {
-      posts: posts.sort(sortByDate)
+      posts: posts.sort(sortByDate),
     },
   };
 }

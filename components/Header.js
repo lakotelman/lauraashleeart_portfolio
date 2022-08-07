@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-export default function Header() {
+export default function Header(props) {
   return (
     
     <header>
       {/* <!-- * Nav Bar--> */}
       <nav>
-        <h1></h1>
+        <h1> {props.tag}</h1>
         <ul className="navigation">
           <li>
             <Link href="/" className="nav-link">
@@ -14,13 +14,8 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="" className="nav-link">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="" className="nav-link">
-              Contact
+            <Link href="/about" className="nav-link">
+              About & Contact
             </Link>
           </li>
         </ul>
@@ -31,8 +26,8 @@ export default function Header() {
         <div className="header-background">
           <div className="about-me-container">
             <article className="about-me">
-              <h2 className="hero-title">I make things.</h2>
-              <p className="hero-text">Here are some examples of my work.</p>
+              <h2 className="hero-title">{props.main}</h2>
+              <p className="hero-text">{props.tagline}</p>
             </article>
           </div>
         </div>

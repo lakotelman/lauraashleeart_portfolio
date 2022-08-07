@@ -1,5 +1,6 @@
 import matter from "gray-matter";
-import {marked} from "marked";
+import BlogSingle from "../../components/ArtBlogSingle";
+import { marked } from "marked";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
@@ -11,17 +12,9 @@ export default function ArtPostPage({
 }) {
   return (
     <>
-      <div>
-        <button><Link href="/artist">
-          Go Back
-        </Link></button>
-        <h1>{title}</h1>
-        <p>{date}</p>
-        <div><img src={cover_image} alt="" /></div>
-        <div className="post-body">
-          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-        </div>
-      </div>
+      <BlogSingle title={title} date={date} cover_image={cover_image}>
+        <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+      </BlogSingle>
     </>
   );
 }
