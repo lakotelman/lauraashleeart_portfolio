@@ -9,7 +9,7 @@ import { sortByDate } from "../utils";
 export default function Developer({ posts }) {
   return (
     <>
-      <Header tag="Laura-Ashlee: Developer" main="I build things."tagline="Here is some of my work."/>
+      <Header tag="Laura-Ashlee: Developer" main="I build things."tagline="Let's connect."/>
       <section className="projects">
         <div className="projects-grid">
           {posts.map((post, index) => (
