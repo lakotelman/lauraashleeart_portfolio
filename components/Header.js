@@ -6,7 +6,7 @@ export default function Header() {
     <header>
       {/* <!-- * Nav Bar--> */}
       <nav>
-        <h1>Laura-Ashlee</h1>
+        <h1></h1>
         <ul className="navigation">
           <li>
             <Link href="/" className="nav-link">
@@ -16,11 +16,6 @@ export default function Header() {
           <li>
             <Link href="" className="nav-link">
               About
-            </Link>
-          </li>
-          <li>
-            <Link href="" className="nav-link">
-              Projects
             </Link>
           </li>
           <li>

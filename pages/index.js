@@ -1,56 +1,23 @@
-import matter from "gray-matter"
+import matter from "gray-matter";
 import Post from "../components/Post";
-import fs from "fs";
 import path from "path";
 import Head from "next/head";
-import {sortByDate} from "../utils"
+import Header from "../components/Header"
+import { sortByDate } from "../utils";
+import Link from "next/link";
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Laura-Ashlee Makes Things</title>
-        <link rel="stylesheet" href="assets/styles.css" />
-        <style>
-          @import
-          url("https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat&display=swap");
-        </style>
-      </Head>
-      <section className="projects">
-        <div className="projects-grid">
-            {posts.map((post, index)=>(
-              <Post post={post}/>
-            ))}
+      
+      <Header/>
+      <div className="container">
+        <h1>Pick a persona</h1>
+        <div>
+          <button><Link href="/artist">Artist</Link></button>
+          <button><Link href="/developer">Developer</Link></button>
         </div>
-      </section>
+      </div>
     </div>
   );
-}
-export async function getStaticProps() {
-  const files = fs.readdirSync(path.join("posts/art_posts"));
-
-  //get slug and frontmatter from the post
-
-  const posts = files.map((filename) => {
-    //create slug
-    const slug = filename.replace(".md", "");
-
-    //get frontmatter
-    const markdownWithMeta = fs.readFileSync(
-      path.join("posts/art_posts", filename),
-      "utf-8"
-    );
-    const {data:frontmatter} = matter(markdownWithMeta)
-
-    return {
-      slug,
-      frontmatter
-    };
-  });
-
-  return {
-    props: {
-      posts: posts.sort(sortByDate)
-    },
-  };
 }

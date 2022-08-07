@@ -2,7 +2,7 @@
 title: "Characters in Scene"
 date: "August 6, 2022"
 exerpt: "This is a quote"
-cover_image: "images/posts/Scene_Sketch_.jpg"
+cover_image: "/images/posts/Scene_Sketch_.jpg"
 ---
 
 ##This is the heading on the page

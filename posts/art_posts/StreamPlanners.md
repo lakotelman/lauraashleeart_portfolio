@@ -2,7 +2,7 @@
 title: "Stream Planners"
 date: "August 6, 2022"
 exerpt: "This is a quote"
-cover_image: "images/posts/Planner_S23.jpg"
+cover_image: "/images/posts/Planner_S23.jpg"
 ---
 
 ##This is the heading on the page

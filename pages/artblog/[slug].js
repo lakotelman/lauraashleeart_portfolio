@@ -12,12 +12,12 @@ export default function ArtPostPage({
   return (
     <>
       <div>
-        <Link href="/">
-          <button>Go Back</button>
-        </Link>
+        <button><Link href="/artist">
+          Go Back
+        </Link></button>
         <h1>{title}</h1>
         <p>{date}</p>
-        <img src={cover_image} alt="" />
+        <div><img src={cover_image} alt="" /></div>
         <div className="post-body">
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>

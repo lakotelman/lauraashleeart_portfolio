@@ -2,7 +2,7 @@
 title: "Alaskan Folk Art"
 date: "August 6, 2022"
 exerpt: "This is a quote about whatever the thing is about limit to 100 words"
-cover_image: "images/posts/Alaskan_Folk.jpg"
+cover_image: "/images/posts/Alaskan_Folk.jpg"
 ---
 
 ## This is the heading on the page

@@ -1,10 +1,11 @@
 import "../styles/globals.css";
-import Header from '../components/Header'
-
+import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Header />
+      <Head>
+        <title>Laura-Ashlee Makes Things</title>
+      </Head>
       <Component {...pageProps} />
     </>
   );
