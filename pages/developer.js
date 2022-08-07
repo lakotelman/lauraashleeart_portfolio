@@ -5,7 +5,7 @@ import path from "path";
 import Head from "next/head";
 import {sortByDate} from "../utils"
 
-export default function Home({ posts }) {
+export default function Developer({ posts }) {
   return (
     <div>
       <Head>

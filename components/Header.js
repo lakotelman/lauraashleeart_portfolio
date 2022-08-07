@@ -1,29 +1,30 @@
-import Link from "next/Link";
+import Link from "next/link";
 
 export default function Header() {
   return (
+    
     <header>
       {/* <!-- * Nav Bar--> */}
       <nav>
         <h1>Laura-Ashlee</h1>
-        <ul class="navigation">
+        <ul className="navigation">
           <li>
-            <Link href="/" class="nav-link">
+            <Link href="/" className="nav-link">
               Home
             </Link>
           </li>
           <li>
-            <Link href="" class="nav-link">
+            <Link href="" className="nav-link">
               About
             </Link>
           </li>
           <li>
-            <Link href="" class="nav-link">
+            <Link href="" className="nav-link">
               Projects
             </Link>
           </li>
           <li>
-            <Link href="" class="nav-link">
+            <Link href="" className="nav-link">
               Contact
             </Link>
           </li>
@@ -31,12 +32,12 @@ export default function Header() {
       </nav>
 
       {/* <!-- * Hero Section--> */}
-      <section class="hero" id="about">
-        <div class="header-background">
-          <div class="about-me-container">
-            <article class="about-me">
-              <h2 class="hero-title">I make things.</h2>
-              <p class="hero-text">Here are some examples of my work.</p>
+      <section className="hero" id="about">
+        <div className="header-background">
+          <div className="about-me-container">
+            <article className="about-me">
+              <h2 className="hero-title">I make things.</h2>
+              <p className="hero-text">Here are some examples of my work.</p>
             </article>
           </div>
         </div>
