@@ -9,7 +9,7 @@ export default function BlogSingle(props) {
       </BlogSingleHeader>
 
       <div className="blog-container">
-        <div>
+        <div className="button-container">
           <button>
             <Link href="/developer">Go Back</Link>
           </button>
