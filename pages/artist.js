@@ -13,7 +13,7 @@ export default function Developer({ posts }) {
       <section className="projects">
         <div className="projects-grid">
           {posts.map((post, index) => (
-            <Post post={post} />
+            <Post post={post} key={index} />
           ))}
         </div>
       </section>
