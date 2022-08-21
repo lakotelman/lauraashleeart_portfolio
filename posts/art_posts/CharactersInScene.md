@@ -2,7 +2,7 @@
 title: "Characters in Scene"
 date: "August 6, 2022"
 exerpt: "I spend almost all of my time in this room."
-cover_image: "/images/posts/Scene_Sketch_.jpg"
+cover_image: "/images/posts/artworks/Scene_Sketch_.jpg"
 ---
 
 # The goal is to create an illustrated movie moment.
