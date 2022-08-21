@@ -1,5 +1,6 @@
 import matter from "gray-matter";
-import Post from "../components/Post";
+import DevPost from "../components/DevPost";
+import DevSkills from "../components/DevSkills";
 import fs from "fs";
 import path from "path";
 import Header from "../components/Header";
@@ -10,10 +11,12 @@ export default function Developer({ posts }) {
   return (
     <>
       <Header tag="Laura-Ashlee: Developer" main="I build things."tagline="Let's connect."/>
+        <div className="container"><DevSkills/></div>
+        <h1>Projects and Blog</h1>
       <section className="projects">
         <div className="projects-grid">
           {posts.map((post, index) => (
-            <Post post={post} />
+            <DevPost post={post} key={index} />
           ))}
         </div>
       </section>

@@ -6,6 +6,11 @@ export default function BlogSingle(props) {
     <BlogSingleHeader>
         <h1>{props.title}</h1>
     </BlogSingleHeader>
+    <div>
+        <button>
+          <Link href="/artist">Go Back</Link>
+        </button>
+      </div>
     <div className="blog-container">
       <div className="blog-flex-col">
           <div>
