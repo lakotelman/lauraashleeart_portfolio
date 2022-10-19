@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import BlogSingleHeader from "./SingleBlogHeader";
 
 export default function BlogSingle(props) {
@@ -16,7 +17,7 @@ export default function BlogSingle(props) {
           <div>
               <p>{props.date}</p>
           </div>
-          <img src={props.cover_image} alt="" />
+          <Image src={props.cover_image} alt="" />
       </div>
       {props.children}
     </div></>

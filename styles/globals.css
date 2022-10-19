@@ -181,7 +181,7 @@ nav h1{
 /* Screen larger than 900px? 3 columns */
 @media (min-width: 900px) {
   .projects-grid { 
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       max-width: fit-content;
       justify-content: center;
       align-items: center;
