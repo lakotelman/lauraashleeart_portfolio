@@ -6,7 +6,7 @@ cover_image: "/images/posts/dev/weather/weatherthumb.png"
 link: "https://weather2.lauraashlee.art"
 ---
 
-### View the full application here → _[Whether Weather](https://weather2.lauraashlee.art)_.
+### View the full application here → [Whether Weather](https://weather2.lauraashlee.art)_.
 
 This application was designed to improve the basic, vanilla javascript version of the same application. _[Link to Weather 1](https://weather.lauraashlee.art)_
 

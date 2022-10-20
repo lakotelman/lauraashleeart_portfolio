@@ -6,7 +6,7 @@ cover_image: "/images/posts/dev/akdex/allanimals.png"
 link: "https://alaska-dex.herokuapp.com"
 ---
 
-### View the full application here → _[AKDex](https://alaska-dex.herokuapp.com)_.
+### View the full application here → [AKDex](https://alaska-dex.herokuapp.com)_.
 
 This application allows users to view and store details about local fauna and store them in their collection as a found/ observed animal. Inspired by Pokémon/Pokédex and the iNaturalist application, I wanted to use Fauna of Alaska Project’s comprehensive list and incorporate it into something beautiful.
 

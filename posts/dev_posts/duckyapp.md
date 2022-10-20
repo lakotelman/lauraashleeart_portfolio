@@ -6,7 +6,7 @@ cover_image: "/images/posts/dev/ducky/duckystatic.jpg"
 link: "https://duckypal.lauraashlee.art"
 ---
 
-### View the full application here → _[Ducky Pal](https://duckypal.lauraashlee.art)
+### View the full application here → [Ducky Pal](https://duckypal.lauraashlee.art)
 
 ## Sometimes we all need to confide in someone when we have made a mistake. 
 

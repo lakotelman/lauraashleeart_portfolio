@@ -15,10 +15,8 @@ export default function BlogSingle(props) {
           </button>
         </div>
         <div className="blog-flex-col">
-          <div>
-            <p>{props.date}</p>
-          </div>
           <img src={props.cover_image} alt="" />
+          <p>{props.date}</p>
         </div>
         {props.children}
       </div>
